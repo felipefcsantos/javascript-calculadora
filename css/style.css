@@ -1,0 +1,127 @@
+:root{
+    --label-icon:url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+    --backgorund-cor: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
+    --branco: #ffffff;
+    --preto: #000;
+    --sombra-botao: #666;
+    --fundo-botao:#cccccc;
+    --fundo-operacoes: #848484;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    background: var(--backgorund-cor);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 2.5rem;
+    transition: 2s;
+}
+
+.mudar-tema {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    background-image: var(--label-icon); 
+    background-repeat: no-repeat;
+    padding: 67px;
+    cursor: pointer; 
+  }
+
+  #btn{
+    display: none;
+  }
+
+  .dark-mode{
+    --backgorund-cor: linear-gradient(45deg, #be4b4b 0%,#4e0c0c 100%);
+    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
+    --branco: linear-gradient(45deg, #d6cece 0%,#a9a9a9 100%);
+    --preto: #ffffff;
+    --sombra-botao: #868585;
+    --fundo-botao: #848484;
+    --fundo-operacoes:#d0d0d0;
+  }
+
+.calculadora{
+    background: var(--branco);
+    border: 20px solid var(--preto);
+    border-radius: 40px;
+    box-shadow: 6px 8px 0 1px rgb(26, 26, 26), 8px 12px 20px 7px #000;
+    width: 250px;
+}
+
+.notch{
+    background-color: var(--preto);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 1rem;
+    margin-left: 35%;
+    width: 5rem;
+}
+
+.visor{
+    border-radius: 20px;
+    background: #ffffff;
+    color: #000;
+    font-size: 2rem;
+    padding: 5px;
+    text-align: right;
+    margin: 1rem;
+    width: 13rem;
+}
+
+.teclado{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+
+.tecla, .operador, .delete, .trocaSinal, .porcentagem, .igual{
+    background: var(--fundo-botao);
+    border-radius: 500px;
+    box-shadow: 4px 6px 0 1px var(--sombra-botao);
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+}
+
+.operadores{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 0.5rem;
+    
+}
+
+.operador{
+    font-size: 1.5rem;
+    height: 2.4rem;
+    width: 2.4rem;
+
+}
+
+.operador.conta{
+    background: #e57d1d;
+}
+
+.delete, .trocaSinal, .porcentagem {
+    background: var(--fundo-operacoes);
+}
+
+.igual{
+    background: var(--preto);
+    color: var(--branco);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.ligacao{
+    display: flex;
+    justify-content: space-around;
+}
+
