@@ -1,25 +1,3 @@
-// const teclas = document.querySelectorAll('.tecla')
-// const visor = document.querySelector('.visor')
-// const resultado = document.querySelector('.l')
-// const desligar = document.querySelector('.d')
-
-// teclas.forEach((elemento) => {
-//     elemento.addEventListener("click", (evento) => {
-//         addVisor(eval(evento.target.textContent))
-//     })
-// })
-
-// console.log(visor.value)
-
-// function addVisor (numero){
-//     if (visor.textContent === "0") {
-//         visor.textContent = numero
-//     } else{
-//         visor.textContent += numero
-//     }
-
-// }
-
 const teclas = document.querySelectorAll('.tecla')
 var visor = document.querySelector('.visor')
 const operador = document.querySelectorAll('.operador')

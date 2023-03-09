@@ -81,6 +81,10 @@ body{
     padding: 1.5rem;
 }
 
+.igual{
+    grid-column:3 / 5 ;
+}
+
 .tecla, .operador, .delete, .trocaSinal, .porcentagem, .igual{
     background: var(--fundo-botao);
     border-radius: 500px;
